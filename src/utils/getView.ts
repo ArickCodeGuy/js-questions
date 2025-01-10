@@ -1,14 +1,16 @@
-export function getView(): string {
-  const key = window.location.pathname.split('/')[1];
+import * as views from '@/views/index';
+
+export function getView() {
+  const key = window.location.pathname.split('/')[2];
 
   switch (key) {
     case 'debounce':
-      return 'debounce';
+      return views.default.debounce();
     case 'sort':
-      return 'sort';
+      return views.default.sort();
     case 'recursion':
-      return 'recursion';
+      return views.default.recursion();
     default:
-      return 'main';
+      return views.default.main();
   }
 }

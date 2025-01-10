@@ -27,7 +27,7 @@ export function initCanvas(canvas: HTMLCanvasElement) {
     canvas.addEventListener('mousedown', handleMouseDown);
   }
 
-  function handleMouseDown(e: MouseEvent) {
+  function handleMouseDown() {
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseup', handleMouseUp, {
       once: true,
@@ -41,7 +41,7 @@ export function initCanvas(canvas: HTMLCanvasElement) {
     render();
   }
 
-  function handleMouseUp(e: MouseEvent) {
+  function handleMouseUp() {
     document.removeEventListener('mousemove', handleMouseMove);
   }
 

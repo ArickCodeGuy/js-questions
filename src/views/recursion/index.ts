@@ -3,8 +3,10 @@ import { nodeToConstructorNode, solution } from './solution';
 import './style.css';
 import { getAppElement } from '@/utils/getAppElement';
 
-const app = getAppElement();
-app.innerHTML = `
+export function page() {
+  console.log('recursion');
+  const app = getAppElement();
+  app.innerHTML = `
   <main>
     <seciton class="section">
       <div class="container">
@@ -23,3 +25,4 @@ app.innerHTML = `
     </seciton>
   </main>
 `;
+}
