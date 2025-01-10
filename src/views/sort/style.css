@@ -1,0 +1,12 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 15px;
+  user-select: none;
+}
+ul li {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
