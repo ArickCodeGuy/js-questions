@@ -1,4 +1,5 @@
 /**
+ * По сути, обычный bubble sort
  * Time: O(n)
  * Space: O(1)
  */
